@@ -1,0 +1,163 @@
+body{
+    color: #12263f;
+    margin: 0;
+    padding: 0;  
+    background-color: rgb(213, 213, 213);
+}
+.jcp-bckimg {
+    background-image: url(../assets/pills2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+/******   NAV   **************/
+.jcp-nav{    
+    text-align:center;
+    padding:0;    
+    border: 2px solid #95aac9;
+    margin-left: 1px;
+    background-color:  white;
+    height: 350px;
+ }
+ a {
+    text-decoration: none;
+ }
+ nav, .jcp-hide {
+     color:  #12263f;
+     
+ }
+ hr {
+     margin: 0;
+ }
+.jcp-nav img{
+    padding: 20px 0;
+    width: 7rem;
+}
+.jcp-lien {
+    color:  #12263f;
+}
+/***************JUMBOTRON********************/
+.jcp-jumbo{
+    background-image:url("../assets/logo-pharmapp.png") ;
+    background-position: center;
+    background-size: 28%;
+    background-repeat: no-repeat;
+}
+/********************MISE EN PAGE FONCTIONS**********************/
+section {
+    padding-bottom: 20px;
+}
+h1 {
+    padding: 20px;
+    text-shadow: 3px 3px 3px grey;
+}
+/*TABLEAU STOCK*/
+thead {
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+/*MESSAGE ALERT FORMULAIRE*/
+#message {                          
+    display: none;
+    color: #E63757;
+    border:  #E63757 2px solid;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 60%;
+    text-align: center;
+}
+#message2{
+    
+    border: 3px solid #88c250;
+     color: #88c250;
+     font-weight: bold;
+     font-size: 1.2rem;
+
+}
+#message3 {
+    width: 100%;
+    
+}
+.jcp-padd-button button{
+    margin: 0 3rem; 
+}
+.jcp-alert{
+    border: 3px solid red;   
+}
+.jcp-normal{
+    border: 0.3px solid black; 
+}
+#bulle{
+    width:100px;
+}
+
+.jcp-hideModif {
+    padding-top: 20px;
+}
+
+.bulle{
+    width:150px;
+    position :absolute;
+    right:120px;
+    bottom: 225px;
+    z-index:2;}
+    
+.bulle2{
+    width:150px;
+    position :absolute;
+    right:320px;
+    bottom: 225px;
+    z-index:2;
+
+}
+ .pharmaco{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.jcp-speech{
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/************RESPONSIVE***********/
+#burger{
+    display: none;
+}
+@media (max-width:768px){
+    #burger {
+        display: block;
+        width: 4rem;
+        padding-left: 10px;
+    }
+    .lespharmas{
+        display:none;
+    }
+    li {
+        display: none;
+    }
+    .jcp-nav{        
+        height: auto;
+        overflow: auto;
+    }
+    .mediaQuery{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+
+}
+
+/*
+#95aac9 bordure
+    #88c250 vert
+    #44a6f1 bleu
+    #E63757 alerte rouge
+    #12263f
+*/
